@@ -1,0 +1,118 @@
+[
+    {
+        "name":"BestRun Juice",
+        "description":"SomeModelDescription",
+        "rowCount":7500,
+        "columns":[
+            {
+                "id":1,
+                "name":"Revenue",
+                "type":"Measure"
+            },
+            {
+                "id":2,
+                "name":"Cost of Goods Sold",
+                "type":"Measure"
+            },
+            {
+                "id":3,
+                "name":"Quantity Sold",
+                "type":"Measure"
+            },
+            {
+                "id":4,
+                "name":"Discount",
+                "type":"Measure"
+            },
+            {
+                "id":5,
+                "name":"Original Sales Price",
+                "type":"Measure"
+            },
+            {
+                "id":6,
+                "name":"Expenses",
+                "type":"Measure"
+            },
+            {
+                "id":7,
+                "name":"Product",
+                "type":"Dimension",
+                "dimensionMembers": [ "Juices", "Alcohol", "Carbonated Drinks", "Other", "Orange with pulp"]
+            },
+            {
+                "id":8,
+                "name":"Location",
+                "type":"Dimension"
+            },
+            {
+                "id":9,
+                "name":"Sales Manager",
+                "type":"Dimension"
+            },
+            {
+                "id":10,
+                "name":"Date",
+                "type":"Time"
+            }
+        ],
+        "dimenensionMembers":[
+            {
+                "id":71,
+                "name":"Juices",
+                "parentDimension":"Product"
+            },
+            {
+                "id":72,
+                "name":"Alcohol",
+                "parentDimension":"Product"
+            },
+            {
+                "id":73,
+                "name":"Carbonated Drinks",
+                "parentDimension":"Product"
+            },
+            {
+                "id":74,
+                "name":"Other",
+                "parentDimension":"Product"
+            },
+            {
+                "id":711,
+                "name":"Orange with pulp",
+                "parentDimension":"Product",
+                "parent":"Juices"
+            },
+            {
+                "id":712,
+                "name":"Orange no pulp",
+                "parentDimension":"Product",
+                "parent":"Juices"
+            },
+            {
+                "id":713,
+                "name":"Lemonade",
+                "parentDimension":"Product",
+                "parent":"Juices"
+            },
+            {
+                "id":715,
+                "name":"Apple Cider",
+                "parentDimension":"Product",
+                "parent":"Juices"
+            },
+            {
+                "id":716,
+                "name":"Mango Juice",
+                "parentDimension":"Product",
+                "parent":"Juices"
+            },
+            {
+                "id":717,
+                "name":"Pineaple Juice",
+                "parentDimension":"Product",
+                "parent":"Juices"
+            }
+        ]
+    }
+]
